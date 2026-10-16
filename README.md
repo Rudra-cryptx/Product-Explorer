@@ -1,18 +1,18 @@
 # 🛍️ Product Explorer
 
-A modern, responsive Product Explorer application built with **React, TypeScript, and CSS**, featuring a sleek dark theme and interactive product browsing.
+A modern, responsive Product Explorer web application built using React, TypeScript, Vite, and CSS. The application provides a dark-themed interface for browsing, searching, filtering, and sorting products.
 
 ## ✨ Features
 
-- 🛒 Browse products with images, names, prices, and categories
-- 🔍 Search products by name
-- 🗂️ Filter products by category
-- ↕️ Sort products by price, rating, and featured products
-- ❤️ Add and remove products from your wishlist
-- 🛍️ Shopping bag functionality
-- 👁️ Quick View modal for product details
-- 📱 Responsive design for desktop and mobile
-- 🌙 Modern dark-themed user interface
+- Browse products with images, names, prices, and categories.
+- Search products by name.
+- Filter products by category.
+- Sort products by price and rating.
+- Add and remove products from the wishlist.
+- Shopping bag functionality.
+- Quick View modal for product details.
+- Responsive design for desktop and mobile screens.
+- Modern dark-themed user interface.
 
 ## 🛠️ Technologies Used
 
@@ -24,38 +24,59 @@ A modern, responsive Product Explorer application built with **React, TypeScript
 
 ## 📋 Prerequisites
 
-Before running the project, make sure you have installed:
+Before running the project, install:
 
-- **Node.js** (LTS version recommended)
-- **npm** (included with Node.js)
-- A code editor such as Visual Studio Code
+1. **Node.js** — preferably the latest LTS version.
+2. **npm** — included with Node.js.
+3. **Visual Studio Code** or another code editor.
+4. **GitHub account** — if you want to upload or share the project.
 
-Check your installations:
+Verify that Node.js and npm are installed by opening a terminal and running:
 
 ```bash
 node -v
 npm -v
 ```
 
-## 🚀 Getting Started
+If both commands display version numbers, you are ready to continue.
 
-### 1. Open the project folder
+## 🚀 How to Run the Project Locally
 
-Open the `product-explorer` folder in Visual Studio Code.
+### Step 1: Download the project
 
-### 2. Open the terminal
+Open the GitHub repository and click **Code → Download ZIP**.
+
+Extract the downloaded ZIP file on your computer using Windows **Extract All**.
+
+Alternatively, open your existing project folder if you already have it on your computer.
+
+### Step 2: Open the project in VS Code
+
+Open Visual Studio Code.
+
+Select **File → Open Folder** and choose the extracted `product-explorer` folder.
+
+Make sure you open the folder containing `package.json`.
+
+### Step 3: Open the terminal
 
 In VS Code, select **Terminal → New Terminal**.
 
-### 3. Install dependencies
+Make sure the terminal is located in the project folder.
 
-Run the following command:
+### Step 4: Install dependencies
+
+Run:
 
 ```bash
 npm install
 ```
 
-### 4. Start the development server
+This command downloads the packages required by the project and creates the `node_modules` folder automatically.
+
+**Important:** The `node_modules` folder does not need to be uploaded to GitHub. It is generated locally when you run `npm install`.
+
+### Step 5: Start the development server
 
 Run:
 
@@ -63,39 +84,44 @@ Run:
 npm run dev
 ```
 
-### 5. Open the application
-
-The terminal will display a local URL, usually:
+Vite will display a local URL in the terminal, usually:
 
 ```text
 http://localhost:5173/
 ```
 
-Open that URL in your browser to use the application.
+Open the displayed URL in your web browser to view the Product Explorer application.
 
-> **Note:** The port may differ if the default port is already in use. Always use the URL displayed in your terminal.
+Keep the terminal running while using the application. To stop the development server, press `Ctrl + C` in the terminal.
 
-## 📁 Project Structure
+## 📤 How to Upload the Project to GitHub Using the Website
 
-```text
-product-explorer/
-├── public/
-├── src/
-│   ├── components/
-│   ├── App.tsx
-│   ├── App.css
-│   ├── data.ts
-│   ├── types.ts
-│   └── main.tsx
-├── index.html
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-```
+### Step 1: Create a repository
 
-*The exact files and folders may vary depending on your implementation.*
+1. Sign in to [GitHub](https://github.com/).
+2. Click the **+** icon and select **New repository**.
+3. Enter `product-explorer` as the repository name.
+4. Choose Public or Private according to your submission requirements.
+5. Click **Create repository**.
+
+### Step 2: Upload project files
+
+1. Open the newly created repository and select the **Code** tab.
+2. Click **Add file → Upload files**.
+3. Extract your project ZIP file on your computer if you have not already done so.
+4. Upload the contents of the project folder, including the `src` folder, `public` folder if present, `package.json`, `package-lock.json`, `index.html`, configuration files, and `README.md`.
+5. Do not upload the `node_modules` folder.
+6. Do not upload `.env` files containing secrets.
+
+### Step 3: Commit the uploaded files
+
+1. Scroll to the **Commit changes** section.
+2. Enter a commit message, such as `Upload Product Explorer project`.
+3. Click **Commit changes**.
+
+Your source code should now be visible in your GitHub repository.
+
+**Note:** If you update `README.md` after uploading the project, upload the updated file to GitHub again so the repository displays the latest instructions.
 
 ## 📦 Build for Production
 
@@ -105,23 +131,4 @@ To create an optimized production build, run:
 npm run build
 ```
 
-To preview the production build locally, run:
-
-```bash
-npm run preview
-```
-
-## 🧑‍💻 Development
-
-- Edit React components inside the `src` folder.
-- Update styling in `src/App.css` or the relevant component CSS files.
-- Update product information in `src/data.ts`, if your project uses this file.
-- The Vite development server supports hot module replacement, so most changes appear in the browser automatically.
-
-## 👨‍💻 Author
-
-Developed as a frontend web development project using React and TypeScript.
-
----
-
-**Product Explorer** — Discover products with a modern shopping experience.
+The generated production
